@@ -132,15 +132,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -499,8 +490,8 @@
           },
           {
             "position": {
-              "x": -2160,
-              "y": -560
+              "x": -2110,
+              "y": -530
             },
             "size": {
               "width": 60,
@@ -619,8 +610,8 @@
           },
           {
             "position": {
-              "x": -2160,
-              "y": -380
+              "x": -2100,
+              "y": -360
             },
             "size": {
               "width": 60,
@@ -1280,7 +1271,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTP Response",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1294,7 +1285,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "HTTP Response"
             ],
             "id": "69ce475a-c0d0-4310-85c9-12024d7b3305",
             "source": {
@@ -1305,7 +1296,116 @@
               "cell": "37b80da6-46e4-481c-9c8b-89c17bfe666e",
               "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": -2160,
+                "y": -600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Credentials"
+            ],
+            "id": "01165a93-b692-4e0b-b441-895a743c9391",
+            "source": {
+              "cell": "37b80da6-46e4-481c-9c8b-89c17bfe666e",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "target": {
+              "cell": "2f98aeaa-bfe7-4de3-a25d-57c31f1871f1",
+              "port": "be154078-2320-4ff5-ae01-1f5372a78120"
+            },
+            "vertices": [
+              {
+                "x": -2200,
+                "y": -530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Set Status Customer",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Set Status Customer"
+            ],
+            "id": "ef177c9f-abc4-47e9-b87a-8a4528ace595",
+            "source": {
+              "cell": "2f98aeaa-bfe7-4de3-a25d-57c31f1871f1",
+              "port": "be154078-2320-4ff5-ae01-1f5372a78120"
+            },
+            "target": {
+              "cell": "37b80da6-46e4-481c-9c8b-89c17bfe666e",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "vertices": [
+              {
+                "x": -2220,
+                "y": -480
+              }
+            ]
           }
         ],
         "description": "e-bank"
