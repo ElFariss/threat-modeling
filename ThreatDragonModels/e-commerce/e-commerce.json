@@ -1,7 +1,7 @@
 {
   "version": "2.6.0",
   "summary": {
-    "title": "e-commerce",
+    "title": "Sistem Pembayaran Online Shop",
     "owner": "faris",
     "description": "Membuat Data Flow Diagram (DFD) dari sistem pembayaran pada pembelian di\nonline shop, mengidentifikasi potensi ancaman keamanan dalam sistem\npembayaran, dan mengusulkan langkah mitigasi untuk mengurangi risiko ancaman\nyang ditemukan.",
     "id": 0
@@ -11,16 +11,1556 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "e-commerce",
+        "title": "Sistem Pembayaran Online Shop",
         "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
+        "placeholder": "Threat model pembayaran online shop",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": -2560,
+              "y": -490
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Pengguna"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b770fbab-5857-4b2c-bcbe-df831a00136d"
+                },
+                {
+                  "group": "right",
+                  "id": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6f30e609-93da-4ed4-a5cf-71c4e591a4ea"
+                },
+                {
+                  "group": "left",
+                  "id": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+                }
+              ]
+            },
+            "id": "2b1ea422-2b34-53de-8ac2-f0eb84c93348",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Pengguna",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -2140,
+              "y": -620
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "E-Commerce Frontend"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "da92e45b-b7ba-4750-97a1-1c50139bdba3"
+                },
+                {
+                  "group": "right",
+                  "id": "51c8dd75-576d-4481-b216-25f25707b1f6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2bdce530-1b1e-4ccf-8fbd-193376e2a818"
+                },
+                {
+                  "group": "left",
+                  "id": "be154078-2320-4ff5-ae01-1f5372a78120"
+                }
+              ]
+            },
+            "id": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "E-Commerce Frontend",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": true,
+              "handlesGoodsOrServices": true,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "e860b56c-affa-584d-8ad8-62facd7ce73d",
+                  "title": "Checkout Tidak Tersedia",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Bot atau lonjakan traffic dapat membuat halaman checkout dan proses pembayaran tidak tersedia bagi pengguna yang sah.",
+                  "mitigation": "Terapkan rate limiting, WAF, dan bot protection.\nGunakan autoscaling, caching, dan queue untuk meredam lonjakan beban.\nPantau error rate serta aktifkan circuit breaker ke layanan eksternal.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -2140,
+              "y": -360
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Checkout & Payment Service"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "da92e45b-b7ba-4750-97a1-1c50139bdba3"
+                },
+                {
+                  "group": "right",
+                  "id": "51c8dd75-576d-4481-b216-25f25707b1f6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2bdce530-1b1e-4ccf-8fbd-193376e2a818"
+                },
+                {
+                  "group": "left",
+                  "id": "be154078-2320-4ff5-ae01-1f5372a78120"
+                }
+              ]
+            },
+            "id": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Checkout & Payment Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": true,
+              "handlesGoodsOrServices": true,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "a9501729-62d0-5595-bb62-d8da2f77e837",
+                  "title": "Manipulasi Nominal atau Status Pembayaran",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Penyerang mengubah harga, diskon, ongkir, atau status paid melalui parameter dari klien atau callback yang tidak divalidasi.",
+                  "mitigation": "Hitung total transaksi di server berdasarkan katalog resmi.\nValidasi ulang item, promo, dan ongkir sebelum charge.\nGunakan idempotency key dan state machine agar transisi status tetap sah.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "76bcba88-2d60-5357-8612-d260b2c82905",
+                  "title": "Transaksi Disangkal Karena Logging Lemah",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Tanpa jejak audit yang kuat, pengguna atau operator dapat menyangkal aksi pembayaran, refund, atau perubahan status order.",
+                  "mitigation": "Simpan audit trail berisi transaction ID, actor, waktu, dan hasil verifikasi.\nLindungi log dari modifikasi dan sinkronkan waktu sistem.\nHubungkan log internal dengan reference ID dari payment gateway.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -1750,
+              "y": -360
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Order & Payment Database"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "a7c1024b-5c4e-4ee3-8a93-fffd3cc8b5c0"
+                },
+                {
+                  "group": "right",
+                  "id": "c621bb4f-134f-41ae-8c56-6f605a4f25f6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "c22b4b11-11e2-42ea-9099-6245e048e715"
+                },
+                {
+                  "group": "left",
+                  "id": "50f42a1b-864f-49f2-9a64-22d5c4f83196"
+                }
+              ]
+            },
+            "id": "65a01164-2988-5ed3-9aaf-8e60c6f5fea9",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "Order & Payment Database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "f0c1bd14-fd4b-5945-aca7-66b1687a2d42",
+                  "title": "Kebocoran Data Order dan Pembayaran",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data pelanggan, token pembayaran, dan metadata transaksi dapat terekspos jika database diakses tanpa kontrol yang memadai.",
+                  "mitigation": "Enkripsi data at rest dan kelola secret dengan vault.\nTerapkan least privilege, rotasi kredensial, dan masking data sensitif.\nBatasi retensi data pembayaran sesuai kebutuhan bisnis dan PCI DSS.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                },
+                {
+                  "id": "7b7e8bc4-cf10-5df6-8060-e5c700ae9719",
+                  "title": "Perubahan Tidak Sah pada Status Pesanan",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Status order, refund, atau settlement dapat diubah langsung di database sehingga memicu fraud dan inkonsistensi transaksi.",
+                  "mitigation": "Gunakan RBAC, separation of duties, dan approval untuk operasi sensitif.\nTambahkan audit log immutable atau event log.\nDeteksi perubahan ilegal dengan checksum dan monitoring integritas.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -1320,
+              "y": -490
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Payment Gateway"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b770fbab-5857-4b2c-bcbe-df831a00136d"
+                },
+                {
+                  "group": "right",
+                  "id": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6f30e609-93da-4ed4-a5cf-71c4e591a4ea"
+                },
+                {
+                  "group": "left",
+                  "id": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+                }
+              ]
+            },
+            "id": "11877319-346a-5270-8542-639d98794b51",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Payment Gateway",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Layanan pihak ketiga di luar kontrol langsung e-commerce.",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": -930,
+              "y": -490
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Bank / Penyedia Keuangan"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "b770fbab-5857-4b2c-bcbe-df831a00136d"
+                },
+                {
+                  "group": "right",
+                  "id": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6f30e609-93da-4ed4-a5cf-71c4e591a4ea"
+                },
+                {
+                  "group": "left",
+                  "id": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+                }
+              ]
+            },
+            "id": "b4229edb-9f38-5686-8682-8507539c1f58",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Bank / Penyedia Keuangan",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "Sistem eksternal milik penyedia layanan keuangan.",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Pemesanan Produk",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": [
+                "82738e1b-89e1-51e8-99e0-3b6894449547"
+              ]
+            },
+            "labels": [
+              "Pemesanan Produk"
+            ],
+            "id": "7086c51a-3d2c-5432-a9db-0e70c30e081a",
+            "source": {
+              "cell": "2b1ea422-2b34-53de-8ac2-f0eb84c93348",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "target": {
+              "cell": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+              "port": "be154078-2320-4ff5-ae01-1f5372a78120"
+            },
+            "vertices": [
+              {
+                "x": -2380,
+                "y": -620
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Opsi Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": [
+                "82738e1b-89e1-51e8-99e0-3b6894449547"
+              ]
+            },
+            "labels": [
+              "Opsi Pembayaran"
+            ],
+            "id": "fabf2728-ec73-5b69-a020-2f1298e2a889",
+            "source": {
+              "cell": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+              "port": "be154078-2320-4ff5-ae01-1f5372a78120"
+            },
+            "target": {
+              "cell": "2b1ea422-2b34-53de-8ac2-f0eb84c93348",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "vertices": [
+              {
+                "x": -2380,
+                "y": -580
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Metode & Detail Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "aaba8c29-54b4-5a6e-849a-56abb29a13d3",
+                  "title": "Kebocoran Data Pembayaran",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Data kartu, token, atau detail pembayaran dapat disadap jika transmisi tidak terlindungi atau ada skrip berbahaya di sisi klien.",
+                  "mitigation": "Gunakan HTTPS/TLS end-to-end.\nGunakan hosted payment field atau tokenisasi dari gateway agar PAN/CVV tidak tersimpan di e-commerce.\nTerapkan CSP dan kontrol pada script pihak ketiga.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "82738e1b-89e1-51e8-99e0-3b6894449547"
+              ]
+            },
+            "labels": [
+              "Metode & Detail Pembayaran"
+            ],
+            "id": "ecd3cc19-e933-526b-9925-434a1c2c2bf3",
+            "source": {
+              "cell": "2b1ea422-2b34-53de-8ac2-f0eb84c93348",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "target": {
+              "cell": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+              "port": "be154078-2320-4ff5-ae01-1f5372a78120"
+            },
+            "vertices": [
+              {
+                "x": -2380,
+                "y": -500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS/gRPC",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Permintaan Pembayaran"
+            ],
+            "id": "b234faeb-77e1-53c5-9935-85079ff2ebac",
+            "source": {
+              "cell": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+              "port": "2bdce530-1b1e-4ccf-8fbd-193376e2a818"
+            },
+            "target": {
+              "cell": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+              "port": "da92e45b-b7ba-4750-97a1-1c50139bdba3"
+            },
+            "vertices": [
+              {
+                "x": -2110,
+                "y": -500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Simpan Order Pending",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "SQL/TLS",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Simpan Order Pending"
+            ],
+            "id": "7eeb5089-ba49-548b-bce1-3f43fd017e38",
+            "source": {
+              "cell": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+              "port": "51c8dd75-576d-4481-b216-25f25707b1f6"
+            },
+            "target": {
+              "cell": "65a01164-2988-5ed3-9aaf-8e60c6f5fea9",
+              "port": "50f42a1b-864f-49f2-9a64-22d5c4f83196"
+            },
+            "vertices": [
+              {
+                "x": -1890,
+                "y": -350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan ke Payment Gateway",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS + HMAC",
+              "threats": [
+                {
+                  "id": "900cfccb-836f-5385-aff8-7e290f470d54",
+                  "title": "Modifikasi Request ke Payment Gateway",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Request server-to-server dapat diubah atau dipalsukan sehingga nominal, merchant ID, atau tujuan pembayaran berubah.",
+                  "mitigation": "Gunakan TLS atau mTLS, HMAC/signature, nonce, dan timestamp.\nValidasi certificate serta batasi endpoint keluar.\nCatat request penting tanpa menyimpan data sensitif.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "8d9ad481-7241-5e4f-87f9-2bdea9060551"
+              ]
+            },
+            "labels": [
+              "Permintaan ke Payment Gateway"
+            ],
+            "id": "88b5cd34-1dde-5f4a-a19c-fb1e38a279c8",
+            "source": {
+              "cell": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+              "port": "51c8dd75-576d-4481-b216-25f25707b1f6"
+            },
+            "target": {
+              "cell": "11877319-346a-5270-8542-639d98794b51",
+              "port": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+            },
+            "vertices": [
+              {
+                "x": -1710,
+                "y": -420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan Otorisasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS/API",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Permintaan Otorisasi"
+            ],
+            "id": "980cfc6a-109e-561c-9df2-6b076dc8cefa",
+            "source": {
+              "cell": "11877319-346a-5270-8542-639d98794b51",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "target": {
+              "cell": "b4229edb-9f38-5686-8682-8507539c1f58",
+              "port": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+            },
+            "vertices": [
+              {
+                "x": -1110,
+                "y": -490
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respons Validasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS/API",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Respons Validasi"
+            ],
+            "id": "ac405cbe-3ce6-5c28-8ab4-7dd3a7b00f9f",
+            "source": {
+              "cell": "b4229edb-9f38-5686-8682-8507539c1f58",
+              "port": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+            },
+            "target": {
+              "cell": "11877319-346a-5270-8542-639d98794b51",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "vertices": [
+              {
+                "x": -1110,
+                "y": -440
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Hasil Transaksi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS webhook",
+              "threats": [
+                {
+                  "id": "e96878a6-dc37-58ea-b197-d9ce198c47bb",
+                  "title": "Webhook / Callback Palsu",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang mengirim callback palsu agar order berubah menjadi paid tanpa transaksi yang benar-benar tervalidasi.",
+                  "mitigation": "Verifikasi signature webhook dan source allowlist.\nLakukan server-to-server verification ke gateway sebelum update order.\nTolak replay dengan nonce, timestamp, dan idempotency check.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "8d9ad481-7241-5e4f-87f9-2bdea9060551"
+              ]
+            },
+            "labels": [
+              "Hasil Transaksi"
+            ],
+            "id": "1d8e6569-6b7d-5af2-ada9-c201f495578b",
+            "source": {
+              "cell": "11877319-346a-5270-8542-639d98794b51",
+              "port": "087c13e0-ff23-4400-be66-2bde7f3a44c6"
+            },
+            "target": {
+              "cell": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+              "port": "51c8dd75-576d-4481-b216-25f25707b1f6"
+            },
+            "vertices": [
+              {
+                "x": -1710,
+                "y": -560
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update Status Pesanan",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "SQL/TLS",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Update Status Pesanan"
+            ],
+            "id": "62328835-d478-5129-8457-c5132cca382c",
+            "source": {
+              "cell": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+              "port": "51c8dd75-576d-4481-b216-25f25707b1f6"
+            },
+            "target": {
+              "cell": "65a01164-2988-5ed3-9aaf-8e60c6f5fea9",
+              "port": "50f42a1b-864f-49f2-9a64-22d5c4f83196"
+            },
+            "vertices": [
+              {
+                "x": -1890,
+                "y": -430
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Status Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS/gRPC",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Status Pembayaran"
+            ],
+            "id": "e73adfc9-b1ac-560d-b298-f74dd972a6fe",
+            "source": {
+              "cell": "3ca44518-8b2b-5b7a-97db-20258801a8fb",
+              "port": "da92e45b-b7ba-4750-97a1-1c50139bdba3"
+            },
+            "target": {
+              "cell": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+              "port": "2bdce530-1b1e-4ccf-8fbd-193376e2a818"
+            },
+            "vertices": [
+              {
+                "x": -2110,
+                "y": -440
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                }
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Konfirmasi Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": [
+                "82738e1b-89e1-51e8-99e0-3b6894449547"
+              ]
+            },
+            "labels": [
+              "Konfirmasi Pembayaran"
+            ],
+            "id": "68d6c988-1758-5784-88c3-c6e506e3d92b",
+            "source": {
+              "cell": "ad37f09d-d303-5630-b0ac-6835b5ded437",
+              "port": "be154078-2320-4ff5-ae01-1f5372a78120"
+            },
+            "target": {
+              "cell": "2b1ea422-2b34-53de-8ac2-f0eb84c93348",
+              "port": "e1c56bd2-f009-46ea-9b6e-9b38f2f884df"
+            },
+            "vertices": [
+              {
+                "x": -2380,
+                "y": -460
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "7086c51a-3d2c-5432-a9db-0e70c30e081a",
+                "fabf2728-ec73-5b69-a020-2f1298e2a889",
+                "ecd3cc19-e933-526b-9925-434a1c2c2bf3",
+                "68d6c988-1758-5784-88c3-c6e506e3d92b"
+              ],
+              "containedElements": []
+            },
+            "labels": [
+              "Internet Boundary"
+            ],
+            "id": "82738e1b-89e1-51e8-99e0-3b6894449547",
+            "source": {
+              "x": -2360,
+              "y": -760
+            },
+            "target": {
+              "x": -2395,
+              "y": -220
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "External Payment Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "88b5cd34-1dde-5f4a-a19c-fb1e38a279c8",
+                "1d8e6569-6b7d-5af2-ada9-c201f495578b"
+              ],
+              "containedElements": []
+            },
+            "labels": [
+              "External Payment Boundary"
+            ],
+            "id": "8d9ad481-7241-5e4f-87f9-2bdea9060551",
+            "source": {
+              "x": -1490,
+              "y": -760
+            },
+            "target": {
+              "x": -1525,
+              "y": -220
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "faris",
-    "threatTop": 0
+    "threatTop": 8
   }
 }
