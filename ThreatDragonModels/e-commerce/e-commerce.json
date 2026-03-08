@@ -1,0 +1,16 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "e-commerce",
+    "owner": "faris",
+    "description": "Membuat Data Flow Diagram (DFD) dari sistem pembayaran pada pembelian di\nonline shop, mengidentifikasi potensi ancaman keamanan dalam sistem\npembayaran, dan mengusulkan langkah mitigasi untuk mengurangi risiko ancaman\nyang ditemukan.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "faris",
+    "threatTop": 0
+  }
+}
